@@ -6,7 +6,7 @@ unity (7.7.1+26.04.20260222-0ubuntu1) resolute; urgency=medium
   * increase compatibility levels to 10
   * Fix build: add the relevant include files to the header and
      the variable SYSTEMD_USER_DIR is set manually.
-  * Change -std=c++11 to 14 CMakeLists.txt
+  * Change -std=c++11 to -std=c++14 in CMakeLists.txt
 
  -- Lexi Ewald <info@darkgrave.de>  Sun, 22 Feb 2026 11:59:25 +0100
 
