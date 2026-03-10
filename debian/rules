@@ -43,7 +43,7 @@ override_dh_install:
 	# install uwidgets
 	cd uwidgets; python3 setup.py install --root=$(CURDIR)/debian/tmp --install-layout=deb
 	install -Dm755 uwidgets/uwidgets-runner.desktop $(CURDIR)/debian/tmp/etc/xdg/autostart/uwidgets-runner.desktop
-	dh_install --fail-missing
+	dh_install
 
 override_dh_gencontrol:
 	dh_gencontrol -- -Vcoreabiversion=$(CORE_ABIVERSION) -Vnuxabiversion=$(NUX_ABIVERSION) -Vunity-default-masterscopes="$(SCOPES_RECOMMENDS)"
@@ -60,4 +60,4 @@ ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 endif
 
 %:
-	dh $@ --with translations,quilt,python3,migrations --parallel
+	dh $@ --with translations,quilt,python3 --parallel

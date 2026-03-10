@@ -1,14 +1,19 @@
 unity (7.7.1+26.04.20260310-0ubuntu1) resolute; urgency=medium
 
+  [ Lexi Ewald ]
   * Bump version to 7.7.1, update C++ standard to C++14, replace
     deprecated boost::prior with std::prev.
   * Fix FTBFS in resolute (LP: #2138942):
     - add systemd destination fallback in data/CMakeLists.txt
     - add missing <cstdint> and <algorithm> includes
-  * Bump debhelper compat from 9 to 10
+  * Bump debhelper and d/compat from 9 to 10
   * Reduce the spacing between the indicators in the top panel to create more space
 
- -- Lexi Ewald <info@darkgrave.de>  Tue, 10 Mar 2026 06:35:03 +0100
+  [ Jeremy Bícha ]
+  * Stop using dh-migrations
+  * Remove unused Build-Depends: libunique-dev (LP: #2143626)
+
+ -- Lexi Ewald <info@darkgrave.de>  Tue, 10 Mar 2026 17:24:03 +0100
 
 unity (7.7.0+23.04.20230222.2-0ubuntu9) resolute; urgency=medium
 
