@@ -1,6 +1,5 @@
 unity (7.7.1+26.04.20260310-0ubuntu1) resolute; urgency=medium
 
-  * New upstream release
   * Bump version to 7.7.1, update C++ standard to C++14, replace
     deprecated boost::prior with std::prev.
   * Fix FTBFS in resolute (LP: #2138942):
