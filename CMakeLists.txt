@@ -1,5 +1,5 @@
-project (unity)
 cmake_minimum_required(VERSION 3.17.0)
+project (unity)
 
 include (cmake/Documentation.cmake)
 include (cmake/pch.cmake)
